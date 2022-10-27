@@ -16,6 +16,7 @@ namespace JimmyToapanta
         {
             InitializeComponent();
             lbUsuario.Text = "El usuario conectado es: " + usuario;
+           
 
         }
 
@@ -34,12 +35,24 @@ namespace JimmyToapanta
 
             pMensual = (mInicial / cuotas) + vAdicional;
 
+            if (mInicial > tCurso)
+            {
 
+            }
+
+
+            pagoM.Text = pMensual.ToString();
 
         }
 
         private void btnGuardar_Clicked(object sender, EventArgs e)
         {
+           
+
+            DisplayAlert("Informacion de Pago", "Guardado Correctamente", "Cerrar");
+
+            Navigation.PushAsync(new Resumen(lbUsuario.Text,txtNombre.Text,txtApellido.Text,txtCarrera.Text,txtIdentificacion.Text,pagoM.Text));
+
 
         }
     }
