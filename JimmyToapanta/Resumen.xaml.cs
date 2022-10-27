@@ -16,6 +16,7 @@ namespace JimmyToapanta
         {
             InitializeComponent();
             
+            lbUsuario.Text = usuario;
             txtNombre.Text = nombre;
             txtApellido.Text = apellido;
             txtCarrera.Text = carrera;
