@@ -12,7 +12,7 @@ namespace JimmyToapanta
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        public Resumen( string usuario, String nombre, string apellido, string carrera, string identificacion, string pMensual)
+        public Resumen( string usuario, String nombre, string apellido, string carrera, string identificacion, string pTotal)
         {
             InitializeComponent();
             
@@ -20,7 +20,7 @@ namespace JimmyToapanta
             txtApellido.Text = apellido;
             txtCarrera.Text = carrera;
             txtIdentificacion.Text = identificacion;
-            pagoM.Text = pMensual + " Dolares Mensuales";
+            pagoT.Text = pTotal;
 
         }
     }

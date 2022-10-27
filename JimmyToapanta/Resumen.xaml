@@ -6,7 +6,8 @@
         <ScrollView>
             <StackLayout>
                 
-                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
 
                 <Label Text="Informacion de Pagos"  HorizontalOptions="CenterAndExpand" FontSize="Title" BackgroundColor="Azure" />
                 <Label Text="Informacion de Estuadiante" FontSize="Medium" />
@@ -35,10 +36,10 @@
                     <Label x:Name="txtCarrera"  Grid.Row="1" Grid.Column="0"/>
                     <Label x:Name="txtIdentificacion"   Grid.Row="1" Grid.Column="1"/>
                     
-                    <Label Text="Pagos" FontSize="Medium" Grid.Row="2" Grid.Column="0" />
+                    <Label Text="Valor Total a Pagar" FontSize="Medium" Grid.Row="2" Grid.Column="0" />
    
                 </Grid>
-                <Label x:Name="pagoM" Text="" FontSize="Title" Grid.Row="4" Grid.Column="1" />
+                <Label x:Name="pagoT" Text="" FontSize="Title" Grid.Row="4" Grid.Column="1" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -4,11 +4,12 @@
              x:Class="JimmyToapanta.Registro">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+        <StackLayout VerticalOptions="Center">
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
 
                 <Label Text="Registro de Pagos"  HorizontalOptions="CenterAndExpand" FontSize="Medium" BackgroundColor="Azure" />
-            <Label Text="Informacion de Estuadiante" FontSize="Medium" />
+            <Label Text="Informacion de Estuadiante" FontSize="Medium" VerticalOptions="Center" />
            
            
 
@@ -34,15 +35,17 @@
                 <Entry x:Name="txtCarrera" Placeholder="Carrera" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtIdentificacion" Placeholder="Identificacion" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
                  <Label Text="Pagos" FontSize="Medium" Grid.Row="2" Grid.Column="0" />
-                <Entry x:Name="txtMinicial" Placeholder="Monto Inicial" Keyboard="Numeric" Grid.Row="3" Grid.Column="0"  />
+                <Entry x:Name="txtMinicial" Placeholder="Monto Inicial" Keyboard="Numeric" Grid.Row="3" Grid.Column="0" TextChanged="txtMinicial_TextChanged" />
                
                 <Button x:Name="btnMinicial" Text="Pago Mensual" Grid.Row="4" Grid.Column="0" Clicked="btnMinicial_Clicked" />
                 <Label x:Name="pagoM" Text="" FontSize="Title" Grid.Row="4" Grid.Column="1" />
-                
-                
-            </Grid>
+                    <Label x:Name="pagoT" Text="" FontSize="Micro" Grid.Row="4" Grid.Column="1" IsVisible="false"/>
+
+
+                </Grid>
             <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" />
-        </StackLayout>
+                <Image Source="https://sige.uisrael.edu.ec/imagenes/logo%20oficial.png"/>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
