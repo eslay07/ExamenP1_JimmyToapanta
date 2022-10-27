@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JimmyToapanta.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label x:Name="lbUsuario" Text="" HorizontalTextAlignment="Center" FontSize="14"/>
+
+                <Label Text="Registro de Pagos"  HorizontalOptions="CenterAndExpand" FontSize="Medium" BackgroundColor="Azure" />
+            <Label Text="Informacion de Estuadiante" FontSize="Medium" />
+           
+           
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                   
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+
+                </Grid.ColumnDefinitions>
+                
+
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtCarrera" Placeholder="Carrera" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtIdentificacion" Placeholder="Identificacion" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                 <Label Text="Pagos" FontSize="Medium" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="txtMinicial" Placeholder="Monto Inicial" Keyboard="Numeric" Grid.Row="3" Grid.Column="0"  />
+               
+                <Button x:Name="btnMinicial" Text="Pago Mensual" Grid.Row="4" Grid.Column="0" Clicked="btnMinicial_Clicked" />
+                <Label x:Name="pagoM" Text="" FontSize="Title" Grid.Row="4" Grid.Column="1" />
+                
+                
+            </Grid>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
